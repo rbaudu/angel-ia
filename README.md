@@ -78,8 +78,102 @@ Les projets '**angel-server-capture**' et '**angel-virtual-assistant**' sont des
 - régulièrement, le programme 'angel-virtual-assistant' interroge le service web 'angel-update-service' pour obtenir du contenus dynamiques mis à jour (actualités internationals, actualités nationales, actualités régionales, météo du jour, météo de demain, météo de la semaine, programme TV du jour, programme radio du jour) et de nouveaux contenus statiques (recettes, histoires courtes, légendes, poésies, biographies, histoires drôles, découvertes scientifiques, chroniques historiques, mythes, prières boudhiste/chrétienne/hindou/juive/musulmane/multi-confessionnelle, des devinettes, des énigmes, des exrcices de mémoire, des charades, de la musique, des chansons)
 
 
-Le projet 'angel-update-service' est un service web de mise à jour qui s'appuie sur diverses APIs et IA LLMs pour obtenir des contenus dynamiques et statiques. Il produit des packages qui sont fournis au programme 'angel-virtual-assistant' installé chez les personnes âgées. Il fournit également des mises à jour logiciel de 'angel-virtual-assistant' et 'angel-server-capture' ainsi que de nouveaux modèles d'IA pour l'anamlyse vidéo.
+Le projet '**angel-update-service**' est un service web de mise à jour qui s'appuie sur diverses APIs et IA LLMs pour obtenir des contenus dynamiques et statiques. Il produit des packages qui sont fournis au programme 'angel-virtual-assistant' installé chez les personnes âgées. Il fournit également des mises à jour logiciel de 'angel-virtual-assistant' et 'angel-server-capture' ainsi que de nouveaux modèles d'IA pour l'anamlyse vidéo.
 
-Pour le packaging des programmes 'angel-virtual-assistant' et 'angel-server-capture' sur les tablettes/pc/Pi, il est prévu d'avoir un système d'installation. Pour l'instant, il n'existe que pour Raspberry Pi 5 dans le projet '**angel-installation-on-pi5**'.
+Pour le packaging des programmes 'angel-virtual-assistant' et 'angel-server-capture' sur les tablettes/pc/Pi, il est prévu d'avoir un système d'installation. Pour l'instant, il n'existe que pour Raspberry Pi 5 dans le projet '**angel-installation-on-pi**'.
 
 Le projet '**synovant website**' est le site web de Synovant.com qui décrit les missions de Synovant et également L'assistant Angel-IA en proposant à ce stade de participer à un projet pilote.
+
+## Status
+
+Ce chapitre donne l'état d'avancement des projets d'Angel-IA. Pour le mettre à jour :
+  - Modifier le pourcentage : (40%) → (60%)
+  - Cocher les tâches terminées dans un premier temps: - [ ] → - [x], puis supprimer les quand elles sont anciennes.
+  - Changer l'emoji d'état : 🔴 (Non démarré) → 🟡 (En développement), ⚪ En pause → 🟢 (Fonctionnel / Production)
+  - Mettre à jour la date de dernier mise à jour ci-dessous
+
+*Dernière mise à jour : 2025-11-17*
+
+### angel-dl4j-detection-models
+
+**État :** 🟡 En développement (40%)
+
+**Tâches à faire :**
+- [ ] Collecter et classifier les images d'entraînement
+- [ ] Entraîner le modèle de détection de présence
+- [ ] Entraîner le modèle de reconnaissance d'activités
+- [ ] Valider la précision des modèles (>90%)
+- [ ] Exporter les modèles au format ND4J compatible
+- [ ] Documenter le processus d'entraînement
+
+---
+
+### angel-server-capture
+
+**État :** 🟡 En développement (50%)
+
+**Tâches à faire :**
+- [ ] Finaliser l'intégration des modèles ND4J
+- [ ] Optimiser la capture vidéo temps réel
+- [ ] Optimiser la détection audio
+- [ ] Tester les performances sur Raspberry Pi 5
+- [ ] Gérer les cas de faible luminosité
+- [ ] Documenter l'API REST
+
+---
+
+### angel-virtual-assistant
+
+**État :** 🟡 En développement (60%)
+
+**Tâches à faire :**
+- [ ] Finaliser l'avatar Ready Player Me
+- [ ] Implémenter toutes les activités proposées
+- [ ] Intégrer la synthèse vocale
+- [ ] Implémenter la reconnaissance vocale ("Angel")
+- [ ] Développer l'algorithme de décision d'activités
+- [ ] Tester l'intégration avec angel-server-capture
+- [ ] Interface de configuration initiale
+
+---
+
+### angel-update-service
+
+**État :** 🟡 En développement (50%)
+
+**Tâches à faire :**
+- [ ] Définir l'architecture du service web
+- [ ] Implémenter les APIs de contenus dynamiques
+- [ ] Intégrer les sources d'actualités
+- [ ] Intégrer les APIs météo
+- [ ] Créer le système de packaging des mises à jour
+- [ ] Déployer sur OVH
+- [ ] Sécuriser les communications
+
+---
+
+### angel-install-on-pi
+
+**État :** 🟡 En développement (20%)
+
+**Tâches à faire :**
+- [ ] Finaliser les scripts d'installation Alpine Linux
+- [ ] Configurer les containers Docker
+- [ ] Automatiser le déploiement
+- [ ] Tester sur Raspberry Pi 5 physique
+- [ ] Documenter le processus complet
+- [ ] Créer une image pré-configurée
+
+---
+
+### synovant-website
+
+**État :** 🟢 Fonctionnel (80%)
+
+**Tâches à faire :**
+- [ ] Optimiser le SEO
+
+
+---
+
+
