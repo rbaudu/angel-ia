@@ -1,0 +1,16 @@
+# Sous-projets (ont leurs propres repositories GitHub)
+angel-dl4j-detection-models/
+angel-install-on-pi/
+angel-server-capture/
+angel-update-service/
+angel-virtual-assistant/
+synovant-website/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
