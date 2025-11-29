@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for dir in data/raw/*/train/*/)",
+      "Bash(done)",
+      "WebSearch",
+      "WebFetch(domain:vast.ai)",
+      "WebFetch(domain:www.ovhcloud.com)",
+      "WebFetch(domain:help.ovhcloud.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
