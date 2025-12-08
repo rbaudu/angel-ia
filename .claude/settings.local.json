@@ -6,7 +6,21 @@
       "WebSearch",
       "WebFetch(domain:vast.ai)",
       "WebFetch(domain:www.ovhcloud.com)",
-      "WebFetch(domain:help.ovhcloud.com)"
+      "WebFetch(domain:help.ovhcloud.com)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nRemove non-existent deeplearning4j-cuda-11.6 dependency\n\nDL4J CUDA support is integrated via nd4j-cuda-11.6-platform only.\nThere is no separate deeplearning4j-cuda-11.6 artifact in Maven Central.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)",
+      "Bash(for dir in */)",
+      "Bash(git commit:*)",
+      "Bash(bash scripts/split_train_test.sh:*)",
+      "Bash(find:*)",
+      "Bash(for d in */)",
+      "Bash(cat:*)",
+      "Bash(git filter-branch:*)",
+      "Bash(git reflog:*)",
+      "Bash(git gc:*)",
+      "Bash(git update-index:*)",
+      "Bash(git rm:*)"
     ],
     "deny": [],
     "ask": []
